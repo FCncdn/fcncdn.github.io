@@ -2,7 +2,7 @@
 layout: post
 title: "kali实验环境搭建"
 data: 2019-04-01
-tags: [security, penetratino test, kali linux]
+tags: [security, penetration test, kali linux]
 excerpt_separator: <!--more-->
 comments: false
 share: false
