@@ -22,7 +22,7 @@ share: false
 
 BIND - Berkeley Internet Name Domain
 
-现在互联网上最常用的DNS软件，使用BIND作为服务器软件的DNS服务器约占所有DNS服务器的九成，BIND现在由互联网系统协会（Internet Systems Consortiem）负责开发和维护
+现在互联网上最常用的DNS软件，使用BIND作为服务器软件的DNS服务器约占所有DNS服务器的九成，BIND现在由互联网系统协会（Internet Systems Consortiem）负责开发和
 
 ## 如何获取DNS服务器的BIND版本
 
@@ -56,8 +56,7 @@ VERSION.BIND.   0   CH  TXT "STU BIND 9.10"
 
 ```text
 DNS服务器
-    名称：dnsltechlab.com
-    IP:192.168.1.100
+    IP:192.168.43.23
 ```
 
 DNS服务器A存储了3条记录：
@@ -70,7 +69,7 @@ DNS服务器A存储了3条记录：
 
 1. 修改conf配置文件
 
-    bind的主配置文件是`named.conf`，里面include了三个文件（options,local,default-zones）
+    bind的主配置文件是`named.conf`，里面include了三个文件
 
     在`named.conf.local`添加一条记录:
 
