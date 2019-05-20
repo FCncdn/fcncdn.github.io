@@ -30,6 +30,7 @@ ifconfig wlan0 up
     ``` bash
     iw wlan0 scan
     ```
+
     找到要连接的ssid，假设找到的是"Tenda"，密码是"password123"
 
 2. 生成一段wpa验证用的配置信息
@@ -39,6 +40,7 @@ ifconfig wlan0 up
     ```bash
     wpa_passphrase "Tenda" >> ritesh.conf password123
     ```
+
     ```bash
     cat ritesh.conf
 
@@ -48,6 +50,7 @@ ifconfig wlan0 up
         psk=a59cafd6e4d197a51f683e137bcfa406dc29115a967e5f668bf96630eb712861
     }
     ```
+
 3. 连接到指定ssid的wifi
 
     ```bash
@@ -62,20 +65,22 @@ ifconfig wlan0 up
 
     `-c`表示包含验证信息的配置文件
 
-
 4. 检查wifi的连接
 
     ```bash
     iw wlan0 link
     ```
+
 5. 配置IP
 
     这时候还不能上网，使用`ifconfig wlan0`可以查看，这时候还没有配置IP
 
     获取IP地址
+
     ```bash
     dhclient wlan0
     ```
+
     最后就可以连接，可以`ping`测试
 
 但是最后还是进不去系统QAQ，而且因为使用的中文，命令行一大串的乱码
